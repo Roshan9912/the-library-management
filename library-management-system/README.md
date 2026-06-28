@@ -524,7 +524,7 @@ The application can be deployed using:
 ### Live API URL
 
 ```
-https://your-deployed-app.onrender.com
+https://the-library-management.onrender.com
 ```
 
 
