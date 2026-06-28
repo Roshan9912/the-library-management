@@ -2,7 +2,7 @@ const router = require("express").Router();
 const auth = require("../middleware/authMiddleware");
 const role = require("../middleware/roleMiddleware");
 const member = require("../controllers/memberController");
-const { idValidation } = require("../validators/yourValidatorFile");
+const { idValidation, validate } = require("../validators/validationRules");
 
 router.get("/", auth, role("librarian"), member.getMembers);
 router.delete("/:id", auth, role("librarian"), idValidation, validate, member.deleteMember);
